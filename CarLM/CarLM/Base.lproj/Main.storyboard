@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CarLM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="V7h-8u-eEG">
+                                <rect key="frame" x="30" y="50" width="315" height="337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="V7h-8u-eEG" secondAttribute="height" multiplier="315:337" id="me0-vQ-yzb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esta app es una Prueba de CoreML de apple con Swift 4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="cCt-QW-qig">
+                                <rect key="frame" x="30" y="482" width="315" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cCt-QW-qig" secondAttribute="height" multiplier="343:46" id="Qb6-rm-wVp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xp-2i-Mcr">
+                                <rect key="frame" x="30" y="604" width="315" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="19"/>
+                                <state key="normal" title="Empezar la venta">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UWg-KT-yBg" kind="show" identifier="showSellCar" id="9ku-JT-2RR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="MainColor"/>
+                        <constraints>
+                            <constraint firstItem="3xp-2i-Mcr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1LA-Hd-1WO"/>
+                            <constraint firstItem="3xp-2i-Mcr" firstAttribute="top" secondItem="cCt-QW-qig" secondAttribute="bottom" constant="80" id="6Tl-Fq-9pU"/>
+                            <constraint firstItem="cCt-QW-qig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8IW-Rs-rd3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cCt-QW-qig" secondAttribute="trailing" constant="30" id="EIs-CC-ez0"/>
+                            <constraint firstItem="V7h-8u-eEG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="OiY-t5-xUE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V7h-8u-eEG" secondAttribute="trailing" constant="30" id="Zdq-iU-hJe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3xp-2i-Mcr" secondAttribute="bottom" constant="30" id="ZyA-Nz-6IS"/>
+                            <constraint firstItem="V7h-8u-eEG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="edr-e3-fyG"/>
+                            <constraint firstItem="V7h-8u-eEG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="yH2-wW-acG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3xp-2i-Mcr" secondAttribute="trailing" constant="30" id="zZa-aG-POM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ozU-AD-yDc">
+            <objects>
+                <viewController id="UWg-KT-yBg" customClass="ViewController" customModule="CarLM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QWD-aE-0VH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TSw-OX-Ixx">
+                                <rect key="frame" x="20" y="40" width="335" height="375.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modelo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faS-nF-3Js">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="22"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3JP-Yo-hR7">
+                                        <rect key="frame" x="0.0" y="30" width="335" height="29"/>
+                                        <segments>
+                                            <segment title="207"/>
+                                            <segment title="307"/>
+                                            <segment title="407"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="calculateValue" destination="UWg-KT-yBg" eventType="valueChanged" id="GPo-7S-WBF"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GV-6y-x4j">
+                                        <rect key="frame" x="0.0" y="66" width="335" height="22"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ICC-Pi-ab1">
+                                        <rect key="frame" x="0.0" y="96" width="337" height="31"/>
+                                        <color key="onTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="calculateValue" destination="UWg-KT-yBg" eventType="valueChanged" id="ddl-Ra-Q4R"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilometraje" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZA-ax-glw">
+                                        <rect key="frame" x="0.0" y="135" width="335" height="22"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100000" minValue="0.0" maxValue="200000" translatesAutoresizingMaskIntoConstraints="NO" id="PIi-7b-15t">
+                                        <rect key="frame" x="-2" y="165" width="339" height="31"/>
+                                        <connections>
+                                            <action selector="calculateValue" destination="UWg-KT-yBg" eventType="valueChanged" id="zZd-OB-o3q"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVc-GQ-zU4">
+                                        <rect key="frame" x="0.0" y="203" width="335" height="22"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="c87-3r-uo8">
+                                        <rect key="frame" x="0.0" y="233" width="335" height="29"/>
+                                        <segments>
+                                            <segment title="Mal"/>
+                                            <segment title="Bueno"/>
+                                            <segment title="Muy bueno"/>
+                                            <segment title="Exelente"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="calculateValue" destination="UWg-KT-yBg" eventType="valueChanged" id="Ucz-fg-CUv"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio de venta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgu-Gh-1SB">
+                                        <rect key="frame" x="0.0" y="269" width="335" height="33"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99,999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caD-jD-tqn">
+                                        <rect key="frame" x="0.0" y="310" width="335" height="65.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="MainColor"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TSw-OX-Ixx" firstAttribute="leading" secondItem="GHN-9I-riJ" secondAttribute="leading" constant="20" id="LGJ-V4-rtZ"/>
+                            <constraint firstItem="GHN-9I-riJ" firstAttribute="trailing" secondItem="TSw-OX-Ixx" secondAttribute="trailing" constant="20" id="P1m-Q9-W1Z"/>
+                            <constraint firstItem="TSw-OX-Ixx" firstAttribute="top" secondItem="GHN-9I-riJ" secondAttribute="top" constant="20" id="n6d-i7-BgE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GHN-9I-riJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="extrasSwitch" destination="ICC-Pi-ab1" id="xfo-v3-dSb"/>
+                        <outlet property="kmsSlider" destination="PIi-7b-15t" id="Mf5-dm-voh"/>
+                        <outlet property="lblKm" destination="LZA-ax-glw" id="foh-df-9v7"/>
+                        <outlet property="lblPrice" destination="caD-jD-tqn" id="B0c-7V-VoU"/>
+                        <outlet property="modelSegmentedControl" destination="3JP-Yo-hR7" id="b22-y1-V7t"/>
+                        <outlet property="stackView" destination="TSw-OX-Ixx" id="UEA-O4-r5N"/>
+                        <outlet property="statusSegmentedControl" destination="c87-3r-uo8" id="ooy-83-ofb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTJ-d5-fqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="348" height="433"/>
+        <namedColor name="MainColor">
+            <color red="0.40299999713897705" green="0.92299997806549072" blue="0.88200002908706665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
